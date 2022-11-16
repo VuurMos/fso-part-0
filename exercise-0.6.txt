@@ -1,0 +1,16 @@
+note over Browser:
+browser executes js-code
+that sends JSON data to server
+using POST request which also
+sets the request header for the
+content type to application/json
+end note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Browser: 201 status {"message":"note created"}
+
+note over Browser:
+browser executes the event handler
+that renders notes to display
+end note
+
